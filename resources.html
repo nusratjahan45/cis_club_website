@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Club - Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-900 border-b border-slate-700 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circuit-board"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M11 9h4a2 2 0 0 0 2-2V3"/><circle cx="9" cy="9" r="2"/><path d="M7 21v-4a2 2 0 0 1 2-2h4"/><circle cx="15" cy="15" r="2"/></svg>
+                    <a href="index.html" class="font-bold text-xl tracking-tight text-white">CIS CLUB</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Home</a>
+                        <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">About</a>
+                        <a href="events.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Events</a>
+                        <a href="resources.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Resources</a>
+                        <a href="gallery.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Gallery</a>
+                        <a href="faq.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">FAQ</a>
+                        <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Contact</a>
+                        <a href="members.html" class="px-3 py-2 rounded-md text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white shadow-lg hover:shadow-blue-500/50 transition-all">Join Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">About</a>
+                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Events</a>
+                <a href="resources.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Resources</a>
+                <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Gallery</a>
+                <a href="faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Contact</a>
+                <a href="members.html" class="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8 animate-fade-inm bg-slate-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-black mb-4">Student Resources</h1>
+                <p class="text-slate-900 max-w-2xl mx-auto">
+                    Curated materials, project links, and recordings to help you succeed in your academic and professional journey.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Resource 1 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-slate-800/80 transition-all duration-300 flex flex-col sm:flex-row items-start gap-4 group">
+                    <div class="bg-slate-900 p-4 rounded-lg shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">Introduction to Python</h3>
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">PDF</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">A comprehensive guide for beginners covering syntax, loops, and functions.</p>
+                        <a href="https://docs.python.org/3/tutorial/index.html" class="inline-flex items-center text-sm text-blue-400 font-semibold hover:text-blue-300 transition-colors group">
+                            Access Resource <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-y-1 transition-transform"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-slate-800/80 transition-all duration-300 flex flex-col sm:flex-row items-start gap-4 group">
+                    <div class="bg-slate-900 p-4 rounded-lg shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">Web Dev Roadmap 2025</h3>
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">Link</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">Interactive roadmap to becoming a full-stack developer.</p>
+                        <a href="https://www.w3schools.com/whatis/" class="inline-flex items-center text-sm text-blue-400 font-semibold hover:text-blue-300 transition-colors group">
+                            Access Resource <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-y-1 transition-transform"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-slate-800/80 transition-all duration-300 flex flex-col sm:flex-row items-start gap-4 group">
+                    <div class="bg-slate-900 p-4 rounded-lg shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">Data Structures Workshop</h3>
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">Link</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">Recording of last semester's workshop on Trees and Graphs.</p>
+                        <a href="https://www.coursera.org/courses?query=data%20structures%20and%20algorithms&utm_medium=sem&utm_source=gg&utm_campaign=b2c_apac_x_multi_ftcof_career-academy_cx_dr_bau_gg_pmax_gc_s2-v2_all_m_hyb_25-08_desktop&campaignid=22914406262&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&creativeid=&assetgroupid=6603288642&targetid=&extensionid=&placement=&gad_source=1&gad_campaignid=22918548145&gbraid=0AAAAADdKX6bh8xsOCgADcxedg1P7Ux7Ro&gclid=CjwKCAiAxc_JBhA2EiwAFVs7XDj9SxHaI8aRQYwuKAX2LLwONkzhJqglqpkMCARLHij8KG1iDJ99OxoCApcQAvD_BwE" class="inline-flex items-center text-sm text-blue-400 font-semibold hover:text-blue-300 transition-colors group">
+                            Access Resource <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-y-1 transition-transform"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 4 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-slate-800/80 transition-all duration-300 flex flex-col sm:flex-row items-start gap-4 group">
+                    <div class="bg-slate-900 p-4 rounded-lg shadow-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">Club Website Repo</h3>
+                            <span class="text-xs font-mono bg-slate-700 text-slate-300 px-2 py-1 rounded">GitHub</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">Source code for this website. Feel free to contribute!</p>
+                        <a href=https://github.com/"" class="inline-flex items-center text-sm text-blue-400 font-semibold hover:text-blue-300 transition-colors group">
+                            Access Resource <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-y-1 transition-transform"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as index) -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <p class="text-slate-500 text-sm">&copy; 2025 CIS Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

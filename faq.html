@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Club - FAQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-slate-600 text-slate-100 antialiased flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-600/80 border-b border-slate-700 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circuit-board"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M11 9h4a2 2 0 0 0 2-2V3"/><circle cx="9" cy="9" r="2"/><path d="M7 21v-4a2 2 0 0 1 2-2h4"/><circle cx="15" cy="15" r="2"/></svg>
+                    <a href="index.html" class="font-bold text-xl tracking-tight text-white">CIS CLUB</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Home</a>
+                        <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">About</a>
+                        <a href="events.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Events</a>
+                        <a href="resources.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Resources</a>
+                        <a href="gallery.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Gallery</a>
+                        <a href="faq.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-900 hover:text-black hover:bg-slate-800 transition-all">FAQ</a>
+                        <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-all">Contact</a>
+                        <a href="members.html" class="px-3 py-2 rounded-md text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white shadow-lg hover:shadow-blue-500/50 transition-all">Join Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">About</a>
+                <a href="events.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Events</a>
+                <a href="resources.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Resources</a>
+                <a href="gallery.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Gallery</a>
+                <a href="faq.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Contact</a>
+                <a href="members.html" class="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class=" bg-slate-300 py-12 px-4 sm:px-6 lg:px-8 animate-fade-in text-black">
+        <div class="max-w-4xl mx-auto faq-container">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-black mb-4">Frequently Asked Questions</h1>
+                <p class="text-slate-900">Find answers to common questions about the CIS Club.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Item 1 -->
+                <div class="faq-item bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg">
+                    <button class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none hover:bg-slate-700 transition-colors">
+                        <span class="text-lg font-semibold text-white">Who can join the CIS Club?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon transform transition-transform duration-300 text-blue-400"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer bg-slate-800/50 px-6 border-t border-slate-700">
+                        <p class="py-4 text-slate-300">Any student currently enrolled in the university can join! While our focus is on Computer Information Systems, we welcome members from all majors who are interested in technology.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg">
+                    <button class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none hover:bg-slate-700 transition-colors">
+                        <span class="text-lg font-semibold text-white">Is there a membership fee?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon transform transition-transform duration-300 text-blue-400"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer bg-slate-800/50 px-6 border-t border-slate-700">
+                        <p class="py-4 text-slate-300">No, membership is completely free! All our workshops, events, and resources are provided at no cost to members, thanks to our university funding and corporate sponsors.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg">
+                    <button class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none hover:bg-slate-700 transition-colors">
+                        <span class="text-lg font-semibold text-white">How often do you hold meetings?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon transform transition-transform duration-300 text-blue-400"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer bg-slate-800/50 px-6 border-t border-slate-700">
+                        <p class="py-4 text-slate-300">We hold general body meetings every two weeks on Wednesdays at 5:00 PM. Special workshops and social events happen throughout the semester on different days.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg">
+                    <button class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none hover:bg-slate-700 transition-colors">
+                        <span class="text-lg font-semibold text-white">Do I need coding experience?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon transform transition-transform duration-300 text-blue-400"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer bg-slate-800/50 px-6 border-t border-slate-700">
+                        <p class="py-4 text-slate-300">Absolutely not! We have resources and workshops tailored for all skill levels, from absolute beginners to advanced developers. Our mentorship program is designed to help you learn.</p>
+                    </div>
+                </div>
+
+                 <!-- Item 5 -->
+                <div class="faq-item bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-lg">
+                    <button class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none hover:bg-slate-700 transition-colors">
+                        <span class="text-lg font-semibold text-white">How can I become an officer?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon transform transition-transform duration-300 text-blue-400"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer bg-slate-800/50 px-6 border-t border-slate-700">
+                        <p class="py-4 text-slate-300">Officer elections are held at the end of every Spring semester. To be eligible, you must be an active member for at least one semester. Keep an eye on our announcements for details!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as index) -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <p class="text-slate-100 text-sm">&copy; 2025 CIS Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
